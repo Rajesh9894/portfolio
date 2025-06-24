@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #292929;
+    position: relative;
+}
+
+.logo a{
+    color: rgb(247, 249, 251);
+    text-decoration: none;
+}
+/* Desktop Navigation */
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li:hover {
+    background-color: #444;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    display: none; /* Hide on desktop */
+}
+
+/* Dropdown Menu (Mobile) */
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: #333;
+    width: 120px;
+    display: none;
+    border-radius: 5px;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    padding: 10px;
+    text-align: left;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.dropdown-menu ul li:hover {
+    background: #555;
+}
+
+/* Main Content */
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.icons img {
+    width: 30px;
+    margin: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links on mobile */
+    }
+    .menu-icon {
+        display: block; /* Show menu icon on mobile */
+    }
+}
+/*-----------------------*/
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #9CA3AF; /* Light gray color like the image */
+    font-size: 20px; /* Adjust icon size */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #ffffff; /* Change color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
